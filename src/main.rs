@@ -18,8 +18,6 @@ const DEPENDENCIES: &[&str] = &[
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let env_values = env_runtime::load_from_os();
-    let _ = &env_values;
     run_stdio(OrgSpec {
         organization: "chapter-publishing",
         repository: "chapter-publishing/chapter-publishing-mcp-server.rs",
